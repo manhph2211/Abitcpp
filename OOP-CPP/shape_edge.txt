@@ -1,0 +1,6 @@
+shape{t_ellipse,12,12,14.1,7.2,yellow,5}
+shape{t_rectangle,15,15,13.1,5.3,blue,2}
+shape{t_circle,10,10,5.2,red,1}
+shape{t_triangle,20,20,10,14,17,orange,7}
+edge{2,1,grey,1}
+edge{3,2,green,8}
