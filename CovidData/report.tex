@@ -1,0 +1,92 @@
+\documentclass[class]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\hypersetup{colorlinks,%
+citecolor=blue,%
+filecolor=black,%
+linkcolor=blue,%
+urlcolor=blue,%
+pdftex}
+\date{}
+
+
+
+\begin{document}
+\section*{}
+\begin{center}
+\textbf{\LARGE PROJECT 2: SHOWING REAL-TIME COVID 19 DATA ON LCD SCREEN} 
+\textbf{\Large August 2020 \\ \\
+Pham Hung Manh \\ 
+Ngo Duc Viet }
+
+
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\pagestyle{fancy}
+\lhead{Jack Ph}
+\chead{API}
+\rhead{Aug, 2020}
+\begin{center}
+\part{\LARGE  ABOUT API?}
+
+\end{center}
+ 
+\section{What is API?}
+
+\subsection{Definition}
+- Application Programming Interface, giao diện cho máy, giữa các phần mềm với phần mềm chứ ko phải người dùng, các phần mềm ko có ngôn ngữ chung mà cần cái này. \\
+- Khi làm phần mềm thì có thể tận dụng các API của hệ thống khác...mà k cần code lại:!! cũng chả cần hiểu nó hd tnao:v Có thể trao đổi dữ liệu nữa, mình đưa access token cho nó xác nhận, rồi nó gửi cho!
+\subsection{Where can I find API?}
+- API có mặt ở mọi nơi: \\
++ Web API: là hệ thống API được sử dụng trong các hệ thống website. Hầu hết các website đều ứng dụng đến Web API cho phép bạn kết nối, lấy dữ liệu hoặc cập nhật cơ sở dữ liệu. Ví dụ: Bạn thiết kế chức nằng login thông qua Google...\\
++ API trên hệ điều hành: Windows hay Linux có rất nhiều API, họ cung cấp các tài liệu API là đặc tả các hàm, phương thức cũng như các giao thức kết nối. Nó giúp lập trình viên có thể tạo ra các phần mềm ứng dụng có thể tương tác trực tiếp với hệ điều hành. \\
++ API của thư viện phần mềm hay framework \\
+
+* Một số API phổ biến : FB Gragh API, Google Login, Maps, Slack API, Google transalte, unsplash (stock images), mes bot, Microsoft cognition...  \\
+\subsection{How to use API?}
+- Có 2 cách dùng phổ biến
+\subsubsection{SDK}
+- Thường là trong trường hợp API của hệ điều hành, ngôn ngữ.Cung cấp SDK sẵn, chỉ việc lấy về ứng dụng dùng thôi, ko khó. Chỉ cần gọi hàm thôi... \\
+- SDK tập hợp nhiều API.
+\subsubsection{API of other systems}
+- Ví dụ API của fb hay gg, nhiều khi lại có SDK sãn , nhưng có cái RESTful API, dùng http, mình viết http request như GET, POST, DELETE, vv đến một URL để xử lý dữ liệu, sau nó trả về data dạng JSON hoặc XML.
+
+\section{REST and RESTful API}
+\subsection{Definition}
+- REST: Representational State Transfer. Giải thích đơn giản, REST là một loạt hướng dẫn và dạng cấu trúc, khuôn mẫu, luật, dùng cho việc chuyển đổi dữ liệu. Thông thường, REST hay được dùng cho ứng dụng web, nhưng cũng có thể làm việc được với dữ liệu phần mềm.\\
+- Nhìn chung, RESTful API là những API đi theo cấu trúc REST.
+\subsection{Some rules}
++Sự nhất quán trong cả API \\
++Tồn tại không trang thái (ví dụ, +không có server-side session) \\
++Sử dụng HTTP status code khi cần thiết \\
++Sử dụng URL endpoint với logical hierarchy \\
++Versioning trong URL chứ không phải trong HTTP header \\
++Sẽ không có bất cứ hướng dẫn nào như W3C HTML5 spec, quá cụ thể đến mức dẫn đến nhầm lẫn, đặc biệt là các nhầm lẫn tai hại quanh thuật ngữ REST.
+\subsection{ How RESTful API works?}
+Chức năng quan trọng nhất của REST là quy định cách sử dụng các HTTP method (như GET, POST, PUT, DELETE…) và cách định dạng các URL cho ứng dụng web để quản các resource. RESTful không quy định logic code ứng dụng và không giới hạn bởi ngôn ngữ lập trình ứng dụng, bất kỳ ngôn ngữ hoặc framework nào cũng có thể sử dụng để thiết kế một RESTful API. \\
+\subsubsection{HTTP request}
+\includegraphics[height=5cm,width=13cm]{learn_latex/RESTfullAPI.jpg}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.5]{hinh/hinh1}
+    \end{center}
+    \caption{Ảnh lấy từ topdev}
+    \label{refhinh1}
+    \end{figure}
+\end{center}
+
+\part{\LARGE ABOUT ESP8266}
+\begin{thebibliography}{5}
+\bibitem{website},TOI DI CODE DAO\textit{youtube},20xx
+\bibitem{website},TOPDEV\textit{\url{https://topdev.vn/blog/api-la-gi/}},20xx
+\end{thebibliography}
+\end{document}
